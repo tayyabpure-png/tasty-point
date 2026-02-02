@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Tasty Point</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="menu-page">
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Tasty<span style="color:var(--primary)">Point</span></a>
+            <div class="nav-links">
+                <a href="index.html" title="Home"><i class="fas fa-home"></i></a>
+                <a href="menu.html" title="Menu"><i class="fas fa-utensils"></i></a>
+                <a href="about.html" title="About"><i class="fas fa-info-circle"></i></a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container animate-load">
+        <h2 style="color: var(--gold); text-shadow: 0 2px 10px rgba(0,0,0,0.5);">Our Menu</h2>
+        
+        <div class="menu-grid">
+            
+            <div class="menu-item">
+                <img src="assets/images/zinger.png" alt="Zinger Burger" class="item-img">
+                <div class="item-details">
+                    <h3>Zinger Burger</h3>
+                    <span class="price">300 Rs</span>
+                    <button class="btn" onclick="addToCart(1, 'Zinger Burger', 300)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/images/shami.png" alt="Anda Shami" class="item-img">
+                <div class="item-details">
+                    <h3>Anda Shami</h3>
+                    <span class="price">130 Rs</span>
+                    <button class="btn" onclick="addToCart(2, 'Anda Shami', 130)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/images/shawarma.png" alt="Shawarma" class="item-img">
+                <div class="item-details">
+                    <h3>Shawarma</h3>
+                    <span class="price">170 Rs</span>
+                    <button class="btn" onclick="addToCart(3, 'Shawarma', 170)">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
